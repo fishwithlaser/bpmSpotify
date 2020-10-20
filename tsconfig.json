@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    // "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node", "jest"],
+    "outDir": "./dist",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "rootDir": "./src/",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["*", "dist/*"]
+    },
+  },
+  "include": ["./src/*.ts", "./src/**/*.ts"],
+  "exclude": ["**/tests/*.test.ts", "**/tests/**/*.test.ts", "setConfig.ts"]
+}
